@@ -1,0 +1,29 @@
+Notes on my solution.
+I have followed the Clean Architecture approach to this project. 
+Clean Architecture propose a wrapped layered approach where at the core is your domain entities which encapsulates concrete definitions for all domain or enterprise objects and logic. 
+Domain objects should not be arbitrarily designed by any developer for purposes of accomplishing a current project. They should always be defined by the Business in association with Architects using business terminology avoiding technical terms where possible. 
+Domain object definitions should not change. They can be extended if warranted however the base object definition should remain the same.   
+Next is the business layer. Can be referred to as the application which controls the business rules specific to that application. The Application will in most cases depend on the Domain however the Domain should have no dependency on anything but itself. The application layer should not depend on anything but itself and the domain layer. 
+Finally you have Intrastation which includes things like frameworks, persistence, external api calls etc.. this is the layer that will most likely change the most. It will have dependencies on the application layer and the domain layer and should be implemented via interfaces so you can quickly change out frameworks, persistence layers, external api’s etc… without having to change your application layer or domain layer.
+In this project I focused on these words “Can be very simple”. I have put in the API and service calls to the two methods 
+POST https://api.taxjar.com/v2/taxes
+GET https://api.taxjar.com/v2/rates/:zip
+Along with a factory which will choose between different Tax Calculators base on a customer’s subscription level.  And the main Tax Service which will use the factory to retrieve the appropriate tax client along with the execution of the two methods. 
+I have one custom mapper that will map the domain entity Order to the api entity of OrderRequest
+It is assumed that domain definitions will rarely match what you will get with a third-party API. 
+I have also done a simple implementation of these methods assuming the Domain only wants the actual tax rate for  GET https://api.taxjar.com/v2/rates/:zip and just the TaxAmount for POST https://api.taxjar.com/v2/taxes. 
+These methods can be implemented in various ways according to business needs/ application or domain rules. 
+I have not implemented logging, caching or using application configs to store values such as urls. I have put in notes where I think these should be implemented for a full solution, again focusing on the main methods and tax service. (I don’t have a lot of free time, between family and my current job. =).
+I do include a service layer because I was making a Tax Service. This is essential the application layer and holds the main interface definition as well as the main Tax Service, along with some other items.  I have included this for an abstraction layer between the interfaces and the infrastructure assuming in the future a different infrastructure may be swapped out. 
+I have also included unit tests on the main items in the solution including the tax clients, the tax factory along with some tests on a few domain items such a value objects etc…. 
+
+ 
+
+
+
+
+
+
+
+
+ 

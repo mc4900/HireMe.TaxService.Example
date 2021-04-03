@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HireMe.Infrastructure.Factory.TaxCalculatorFactory" BaseTypeListCollapsed="true">
+    <Position X="7" Y="6.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAABAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\TaxCalculatorFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HireMe.Infrastructure.Mapper.EntityMapper" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Mapper\EntityMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HireMe.Infrastructure.ApiClients.TaxJar.Entities.Address">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAACAAAAAIAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\Entities\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HireMe.Infrastructure.ApiClients.TaxJar.Entities.Breakdown">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAEAQAAGkAEAAQAACAABAQAAAAUBAAA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\Entities\Breakdown.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HireMe.Infrastructure.ApiClients.TaxJar.Entities.Jurisdiction">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAQAAAIAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\Entities\Jurisdiction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HireMe.Infrastructure.ApiClients.TaxJar.Entities.LineItem">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAgAAgAAAAAA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\Entities\LineItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HireMe.Infrastructure.ApiClients.TaxJar.Entities.LineItemTax">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABgYAAAAAAEAAAAAkAAAAQAAIAABAAAAAAUBCAA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\Entities\LineItemTax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HireMe.Infrastructure.ApiClients.TaxJar.Entities.NexusAdress">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\Entities\NexusAdress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HireMe.Infrastructure.ApiClients.TaxJar.Entities.OrderRequest">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhAAAAAAAAAAAABAAICAACAAAQAAAAIACAEoBIAAAA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\Entities\OrderRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HireMe.Infrastructure.ApiClients.TaxJar.Entities.OrderResponse">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\Entities\OrderResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HireMe.Infrastructure.ApiClients.TaxJar.Entities.RateResponse">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABQAAAAAAAAAAAIAAAACAQABAIAAAAgQAAABAAAAMA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\Entities\RateResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HireMe.Infrastructure.ApiClients.TaxJar.Entities.TaxDetail">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABBAAAAAAAAAAgAAAAAARCAAAAAAAEAAAAAAAABAAA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\Entities\TaxDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HireMe.Infrastructure.TaxApiClient.TaxJar.TaxJarClient" BaseTypeListCollapsed="true">
+    <Position X="1" Y="6.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAIACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TaxApiClients\TaxJar\TaxJarClient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HireMe.Infrastructure.TaxApiClients.TaxSpeed.TaxSpeedClient" BaseTypeListCollapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TaxApiClients\TaxSpeed\TaxSpeedClient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HireMe.Infrastructure.Startup">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Startup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="HireMe.Infrastructure.Mapper.IEntityMapper">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Mapper\IEntityMapper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
